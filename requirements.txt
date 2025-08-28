@@ -3,3 +3,4 @@ langchain
 dotenv
 langchain-google-genai
 google-generativeai
+streamlit
