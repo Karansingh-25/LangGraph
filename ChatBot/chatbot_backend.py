@@ -47,6 +47,3 @@ graph.add_edge(START,"Chat_bot")
 graph.add_edge("Chat_bot",END)
 
 chatbot=graph.compile(checkpointer=checkpoint)
-
-
-
