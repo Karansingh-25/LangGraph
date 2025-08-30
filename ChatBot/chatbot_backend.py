@@ -47,3 +47,11 @@ graph.add_edge(START,"Chat_bot")
 graph.add_edge("Chat_bot",END)
 
 chatbot=graph.compile(checkpointer=checkpoint)
+
+response=chatbot.invoke(
+                {'message':[HumanMessage(content="capital of india?")]},
+                config={'configurable':{'thread_id':'thread-1'}}
+            )
+
+state = chatbot.get_state(config={'configurable':{'thread_id':'thread-1'}})
+print(state)
